@@ -4,7 +4,7 @@ export const pixabayApi = async(name, page) => {
     const API_KEY = '34923285-708b41b0c2a9dca89e9ee12b3';
     const BASE_URL = 'https://pixabay.com';
       
-        return await axios.get(`${BASE_URL}/api/?key=${API_KEY}&q=${name}&page=${page}&per_page=150&image_type=photo&orientation=horizontal&safesearch=true`)
+        return await axios.get(`${BASE_URL}/api/?key=${API_KEY}&q=${name}&page=${page}&per_page=40&image_type=photo&orientation=horizontal&safesearch=true`)
           
     }
 
