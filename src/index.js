@@ -149,21 +149,22 @@ function renderPhoto(list) {
 
 // функция по использованию библиотеки
 function gallery() {
-let gallery = new SimpleLightbox('.gallery a')
-    console.log(gallery);
-    gallery.refresh();
+  let gallery = new SimpleLightbox('.gallery a')
+  console.log(gallery);
+  gallery.refresh();
 }
 
 
 
 function scroll() {
-const { height: cardHeight } = document.querySelector(".gallery").firstElementChild.getBoundingClientRect();
+  const { height: cardHeight } = document.querySelector(".gallery").firstElementChild.getBoundingClientRect();
+  
   console.dir(document.querySelector(".gallery").firstElementChild.getBoundingClientRect());
-window.scrollBy({
-  top: cardHeight * 2,
-  behavior: "smooth",
+  
+  window.scrollBy({
+    top: cardHeight * 2,
+    behavior: "smooth",
 });
-
 }
 
 
