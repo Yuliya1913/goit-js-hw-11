@@ -21,20 +21,6 @@ export const pixabayApi = async(name, page) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
 // подходит для всего, кроме тандэма с библиотекой axios
@@ -63,6 +49,27 @@ export const pixabayApi = async(name, page) => {
 
 
 
+
+// // async/awayt 
+
+// export const pixabayApi = async (name, page) => {
+//     try{
+//     const API_KEY = '34923285-708b41b0c2a9dca89e9ee12b3';
+//     const BASE_URL = 'https://pixabay.com';
+      
+//         return fetch(`${BASE_URL}/api/?key=${API_KEY}&q=${name}&page=${page}&per_page=40&image_type=photo&orientation=horizontal&safesearch=true`)
+//             .then(responce => {
+//                 console.log(responce)
+      
+//             if (!responce.ok) {
+//                 throw new Error(responce.status);
+
+//                 }
+                
+//             return responce.json();
+//         })
+        
+//     }
 
 
 
